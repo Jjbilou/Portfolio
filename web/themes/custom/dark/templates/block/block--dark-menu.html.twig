@@ -1,0 +1,25 @@
+<!--  -->
+<div{{ attributes.addClass("toto") }}>
+  {{ title_prefix }}
+  {% if label %}
+    <h2{{ title_attributes }}>{{ label }}</h2>
+  {% endif %}
+  {{ title_suffix }}
+  {% block content %}
+
+    <div class="row titi">
+        <h1 class="tata">
+          <a href="#top">
+            <img src="{{content.field_image[0]['#markup']}}" alt="Nicolas Dobosz - ND - mon site" class="img-fluid img-logo" loading="lazy">
+          </a>
+        </h1>
+        <nav class="tata">
+            {{ content.field_body }}
+        </nav>
+
+    {{ content|without('field_image', 'field_body') }}
+    
+    </div>
+  {% endblock %}
+</div>
+

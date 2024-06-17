@@ -1,0 +1,12 @@
+<div{{ attributes.addClass("toto") }}>
+  {{ title_prefix }}
+  {% if label %}
+    <h2{{ title_attributes }} id="competences">{{ label }}</h2>
+  {% endif %}
+  {{ title_suffix }}
+  {% block content %}
+    <div class="row titi">
+    {{ content }}
+    </div>
+  {% endblock %}
+</div>

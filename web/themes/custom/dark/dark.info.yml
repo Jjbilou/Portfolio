@@ -1,0 +1,16 @@
+name: Dark
+type: theme
+base theme: false
+description: ' Juste a dark theme'
+package: custom
+version: '1.0.0'
+core_version_requirement: ^10
+
+libraries:
+  - dark/global-styling
+
+regions:
+ header: Header
+ content: Content
+ sidebar_left: SidebarLeft
+ footer: Footer

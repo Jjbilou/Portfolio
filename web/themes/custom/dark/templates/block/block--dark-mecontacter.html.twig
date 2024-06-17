@@ -1,0 +1,24 @@
+<div{{ attributes }}>
+  {{ title_prefix }}
+  {% if label %}
+    <h2{{ title_attributes }} id="contacts">{{ label }}</h2>
+  {% endif %}
+  {{ title_suffix }}
+  {% block content %}
+    <div class="contact-item-wrapper">
+      <div class="contact-item">
+        {{ content.field_imagecontact }}
+        {{ content.field_text }}
+      </div>
+      <div class="contact-item">
+        {{ content.field_imagecontact2 }}
+        {{ content.field_text2 }}
+      </div>
+      <div class="contact-item">
+        {{ content.field_imagecontact3 }}
+        {{ content.field_text3 }}
+      </div>
+    </div>
+  {% endblock %}
+</div>
+
